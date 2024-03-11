@@ -95,7 +95,8 @@ const AddProduct = async () => {
                     icon: 'success',
                     position: 'top-end',
                     showConfirmButton: false,
-                    title: page.props.flash.success
+                    title: page.props.flash.success,
+                    timer: 3000,
                 })
                 dialogVisible.value = false;
                 resetFormData();
@@ -168,7 +169,8 @@ const updateProduct = async () => {
                     icon: "success",
                     position: "top-end",
                     showConfirmButton: false,
-                    title: page.props.flash.success
+                    title: page.props.flash.success,
+                    timer: 3000,
                 });
             }
         })
@@ -199,7 +201,9 @@ const deleteProduct = (product, index) => {
                             icon: "success",
                             position: "top-end",
                             showConfirmButton: false,
-                            title: page.props.flash.success
+                            title: page.props.flash.success,
+                            timer: 3000,
+
                         });
                     }
                 })
