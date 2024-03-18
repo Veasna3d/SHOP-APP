@@ -6,7 +6,7 @@ defineProps({
 })
 
 const addToCart = (product) => {
-    console.log(product)
+    console.log(product)    
     router.post(route('cart.store', product), {
         onSuccess: (page) => {
             if (page.props.flash.success) {
